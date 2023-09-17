@@ -40,7 +40,7 @@ func LogScan() gin.HandlerFunc {
 
 		} else {
 			fmt.Print("No id present/n")
-			storeData("./uncatagorized-json-queue.ndjson", string(jsArr[:]))
+			storeData("../data/uncatagorized-json-queue.ndjson", string(jsArr[:]))
 		}
 		c.JSON(http.StatusOK, gin.H{"status": "ok"})
 	}
